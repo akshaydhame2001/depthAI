@@ -35,8 +35,8 @@ def initialize_oak_pipeline():
     
     mono_left.setBoardSocket(dai.CameraBoardSocket.LEFT)
     mono_right.setBoardSocket(dai.CameraBoardSocket.RIGHT)
-    mono_left.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
-    mono_right.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
+    mono_left.setResolution(dai.MonoCameraProperties.SensorResolution.THE_800_P)
+    mono_right.setResolution(dai.MonoCameraProperties.SensorResolution.THE_800_P)
     
     stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
     mono_left.out.link(stereo.left)
